@@ -22,12 +22,12 @@ default_args = {
 
 # Описание DAG
 dag = DAG(
-    "theory_v1",
+    "marija-shkurat-wrn7887_1",
     default_args=default_args,
     description="DAG, version 1",
     schedule_interval="@daily",
     start_date=days_ago(2),
-    tags=["theory"],
+    tags=["marija-shkurat-wrn7887"],
   
 )
 
