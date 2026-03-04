@@ -1,0 +1,17 @@
+airflow-startde-worker-0.airflow-startde-worker.airflow-startde.svc.cluster.local
+*** Found logs served from host http://airflow-startde-worker-0.airflow-startde-worker.airflow-startde.svc.cluster.local:8793/log/dag_id=marija-shkurat-wrn7887_5/run_id=scheduled__2026-03-03T00:00:00+00:00/task_id=save_chars/attempt=1.log
+[2026-03-04T12:51:52.580+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: marija-shkurat-wrn7887_5.save_chars scheduled__2026-03-03T00:00:00+00:00 [queued]>
+[2026-03-04T12:51:52.630+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: marija-shkurat-wrn7887_5.save_chars scheduled__2026-03-03T00:00:00+00:00 [queued]>
+[2026-03-04T12:51:52.630+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2026-03-04T12:51:52.646+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): save_chars> on 2026-03-03 00:00:00+00:00
+[2026-03-04T12:51:52.650+0000] {standard_task_runner.py:60} INFO - Started process 599446 to run task
+[2026-03-04T12:51:52.653+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'marija-shkurat-wrn7887_5', 'save_chars', 'scheduled__2026-03-03T00:00:00+00:00', '--job-id', '109156', '--raw', '--subdir', 'DAGS_FOLDER/marija-shkurat-wrn7887/marija-shkurat-wrn7887_5.py', '--cfg-path', '/tmp/tmpyg5lj9qu']
+[2026-03-04T12:51:52.655+0000] {standard_task_runner.py:88} INFO - Job 109156: Subtask save_chars
+[2026-03-04T12:51:52.766+0000] {task_command.py:423} INFO - Running <TaskInstance: marija-shkurat-wrn7887_5.save_chars scheduled__2026-03-03T00:00:00+00:00 [running]> on host airflow-startde-worker-0.airflow-startde-worker.airflow-startde.svc.cluster.local
+[2026-03-04T12:51:53.031+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='marija-shkurat-wrn7887' AIRFLOW_CTX_DAG_ID='marija-shkurat-wrn7887_5' AIRFLOW_CTX_TASK_ID='save_chars' AIRFLOW_CTX_EXECUTION_DATE='2026-03-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-03-03T00:00:00+00:00'
+[2026-03-04T12:52:08.087+0000] {base.py:83} INFO - Using connection ID 'marija-shkurat-wrn7887_pg' for task execution.
+[2026-03-04T12:52:08.143+0000] {logging_mixin.py:188} INFO - Данные успешно сохранены в базу данных
+[2026-03-04T12:52:08.144+0000] {python.py:201} INFO - Done. Returned value was: None
+[2026-03-04T12:52:08.164+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=marija-shkurat-wrn7887_5, task_id=save_chars, execution_date=20260303T000000, start_date=20260304T125152, end_date=20260304T125208
+[2026-03-04T12:52:08.191+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-03-04T12:52:08.212+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
