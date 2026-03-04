@@ -8,14 +8,10 @@
 - Python
 - PostgreSQL
 - REST API
-- Docker
 
 ## 📂 Структура проекта
 
 - dags/ — все DAG'и, сгруппированные по темам
-- sql/ — SQL-скрипты для создания и очистки таблиц
-- configs/ — примеры connections и variables
-- docker/ — локальный запуск Airflow
 - screenshots/ — примеры Graph / Tree View
 
 ## 🚀 Реализованные проекты
